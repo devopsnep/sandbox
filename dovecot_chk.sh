@@ -2,7 +2,7 @@
 #!/bin/bash'
 pgrep dovecot &> /dev/null ;
 status=`echo $?`
-admins="norbuurgen@gmail.com"
+admins="urgen@somedomain.com"
 count=0
 threshold=2
 sname="dovecot"
