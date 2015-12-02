@@ -1,8 +1,7 @@
-#Dragonsnet- Postfix check
-#!/bin/bash'
+#!/bin/bash
 ps aux | grep postfix | grep -v "grep" &> /dev/null;
 status=`echo $?`
-admins="norbuurgen@gmail.com"
+admins="user1212@example.co.uk"
 count=0
 threshold=2
 sname="postfix"
@@ -23,7 +22,3 @@ if [ $status != 0 ];
      else
          :
 fi
-
-
-
-
