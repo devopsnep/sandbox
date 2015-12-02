@@ -1,8 +1,9 @@
-#Dragonsnet- Clam Check
+# Clam Check -debian 7 wheezy
 #!/bin/bash
-pgrep clamav-daemon &> /dev/null;
+pgrep clamd &> /dev/null;
 status=`echo $?`
-admins="norbuurgen@gmail.com"
+#echo $status;
+admins="useradmin1@example.com, useradmin2@somedomain.com"
 count=0
 threshold=2
 sname="clamav-daemon"
@@ -24,7 +25,4 @@ if [ $status != 0 ];
      else
          :
 fi
-
-
-
 
