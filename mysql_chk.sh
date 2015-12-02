@@ -1,8 +1,7 @@
-#Dragonsnet- Mysql server check
 #!/bin/bash
 /bin/netstat -ant | grep 3306 &> /dev/null;
 mysqlstat=`echo $?`
-admins="norbuurgen@gmail.com"
+admins="abc@xyz.com"
 count=0
 threshold=2
 sname="mysql"
@@ -24,7 +23,3 @@ if [ $mysqlstat != 0 ];
      else
          :
 fi
-
-
-
-
