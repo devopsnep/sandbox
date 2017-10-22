@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+
+'''
+    Python 3
+    Example use case: nabil monthly report pdf sometimes requires last five/seven digits of bank account or phone number
+    to open up the pdf file
+'''
+def main():
+    #python2 num=raw_input("Enter your number: ")
+    num=input("Enter your number: ")
+    name=input("Enter your whatever name: ")
+    resultArray=result(num,name)
+    print(resultArray)
+
+def result(*args):
+    num = args[0]
+    name = args[1]
+    num_new = list(num)
+    name_new = list(name)
+    lastnum = "".join(num_new[-5:])
+    lastname = "".join(name_new[-5:])
+    resultArray=[lastnum,lastname]
+    return resultArray
+    # print('{}'.format("".join(num_new[-5:])))
+    # print('{}'.format("".join(name_new[-5:])))
+
+if __name__ == "__main__": main()
