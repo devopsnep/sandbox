@@ -25,3 +25,13 @@ def result(*args):
     # print('{}'.format("".join(name_new[-5:])))
 
 if __name__ == "__main__": main()
+    
+'''
+    python join string method
+    The method join() returns a string in which the string elements of sequence have been joined by str separator
+    s = "-";
+    seq = ("a", "b", "c"); # This is sequence of strings.
+    print s.join( seq )
+    
+    o/p =>>> a-b-c
+'''
